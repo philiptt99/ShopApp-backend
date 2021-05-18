@@ -42,4 +42,16 @@ public class UserServiceImpl implements UserService {
 		
 		
 	}
+
+	@Override
+	public User findByEmail(String email) throws Exception {
+		return userRepo.findByMobile(email).orElseThrow(() -> new Exception("User Not found.."));
+	}
+	@Override
+	public User forgot(HashMap<String, String> forgotRequest) throws Exception {
+		
+		User user = new User();
+		user =userRepo.findByEmail(forgotRequest.get("resetemail"));
+		return user;
+	}
 }

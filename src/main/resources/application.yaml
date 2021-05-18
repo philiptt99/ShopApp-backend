@@ -10,7 +10,13 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-      
+  mail:
+    properties:
+     mail:
+      smtp:
+          auth: true
+          starttls:
+            enable: true
   security:
    jwt:
     token:

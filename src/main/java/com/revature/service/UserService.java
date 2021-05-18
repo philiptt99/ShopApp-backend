@@ -11,5 +11,6 @@ public interface UserService {
 	User findByMobile(String mobile) throws Exception;
 	User getUserDetailById(long userId) throws Exception;
 	User signUpUser(HashMap<String,String> signupRequest) throws Exception;
-	
+	User findByEmail(String email) throws Exception;
+	User forgot(HashMap<String,String> forgotRequest) throws Exception;
 }

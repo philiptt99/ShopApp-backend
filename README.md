@@ -40,6 +40,10 @@ To-do list:
    
 git clone https://github.com/philiptt99/ShopApp-backend.git
 
+## Link to frontend Github
+
+https://github.com/philiptt99/ShopApp-frontend
+
 
 
 
